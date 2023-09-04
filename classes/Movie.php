@@ -3,27 +3,29 @@
 class Movie {
     public $title;
     public $genre;
-    public $description;
     private $available;
+    public $description;
 
+   
     public function __construct(
         $title,
         $genre,
+        $available,
         $description = null,
-        $available = true
     ) {
         $this->title = $title;
         $this->genre = $genre;
+        $this->setAvailable($available);
         $this->description = $description;
-        $this->available = $available;
     }
+    
 
 
     public function getAvailable() {
        return $this->available;
     }
-
-
+    
+    
     public function setAvailable($available) {
         if(is_bool($available)) {
             $this->available = $available;

@@ -5,8 +5,9 @@ require_once __DIR__.'/classes/Movie.php';
 $firstMovie = new Movie(
     'Top Gun Maverick',
     'Action',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ducimus!',
-    true
+    true,
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ducimus!'
+    
 );
 
 var_dump($firstMovie);
@@ -16,8 +17,8 @@ var_dump($firstMovie);
 $secondMovie = new Movie(
     'Avatar',
     'Adventure',
-    null,
-    false
+    false,
+    null
 );
 
 var_dump($secondMovie);
